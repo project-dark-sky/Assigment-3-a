@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class HeartScript : MonoBehaviour
@@ -22,7 +21,6 @@ public class HeartScript : MonoBehaviour
         state += new Vector3(dir, dir, dir) * speed * Time.deltaTime;
         transform.localScale = state;
 
-        Debug.Log(dir + " " + state + " " + transform.localScale);
         if (transform.localScale.x >= maxTarget)
         {
             dir = -1;
